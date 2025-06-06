@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro de Clientes</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro de Cliente</h1>
+    <form id="clienteForm">
+      <input type="text" name="nome" placeholder="Cliente / Customer" required>
+      <input type="text" name="telefone" id="telefone" placeholder="Tel / Cell phone" required>
+      <input type="text" name="cep" id="cep" placeholder="CEP">
+      <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+      <input type="text" name="cpf" placeholder="CPF">
+      <input type="email" name="email" placeholder="Email">
+      <input type="text" name="numeroVenda" id="numeroVenda" placeholder="Nº Venda" readonly>
+
+      <div id="produtos">
+        <div class="produto">
+          <input type="text" placeholder="Nome do Produto" class="nomeProduto">
+          <input type="number" placeholder="Valor (R$)" class="valorProduto">
+        </div>
+      </div>
+      <button type="button" id="addProduto">+ Produto</button>
+
+      <input type="number" name="desconto" id="desconto" placeholder="Desconto (R$)">
+      <input type="text" name="total" id="total" placeholder="Total (calculado)" readonly>
+
+      <input type="text" name="formaPagamento" placeholder="Forma de Pagamento">
+      <button type="submit">Salvar Cliente</button>
+    </form>
+    <p id="mensagem"></p>
+  </div>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
