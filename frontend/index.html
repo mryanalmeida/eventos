@@ -12,24 +12,15 @@
     <h1>Cadastro de Cliente</h1>
     <form id="clienteForm">
       <input type="text" name="nome" placeholder="Cliente / Customer" required>
-      <input type="text" name="telefone" id="telefone" placeholder="Tel / Cell phone" required>
-      <input type="text" name="cep" id="cep" placeholder="CEP">
-      <input type="text" name="endereco" id="endereco" placeholder="Endereço" required>
+      <input type="text" name="telefone" placeholder="Tel / Cell phone" required>
+      <input type="text" name="endereco" placeholder="Endereço" required>
+      <input type="text" name="cep" placeholder="CEP">
       <input type="text" name="cpf" placeholder="CPF">
       <input type="email" name="email" placeholder="Email">
-      <input type="text" name="numeroVenda" id="numeroVenda" placeholder="Nº Venda" readonly>
-
-      <div id="produtos">
-        <div class="produto">
-          <input type="text" placeholder="Nome do Produto" class="nomeProduto">
-          <input type="number" placeholder="Valor (R$)" class="valorProduto">
-        </div>
-      </div>
-      <button type="button" id="addProduto">+ Produto</button>
-
-      <input type="number" name="desconto" id="desconto" placeholder="Desconto (R$)">
-      <input type="text" name="total" id="total" placeholder="Total (calculado)" readonly>
-
+      <input type="text" name="numeroVenda" placeholder="Nº Venda">
+      <textarea name="produtos" placeholder="Produtos" rows="4"></textarea>
+      <input type="text" name="desconto" placeholder="Desconto">
+      <input type="text" name="total" placeholder="Total">
       <input type="text" name="formaPagamento" placeholder="Forma de Pagamento">
       <button type="submit">Salvar Cliente</button>
     </form>

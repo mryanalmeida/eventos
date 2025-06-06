@@ -1,7 +1,7 @@
 {
   "name": "Cadastro de Clientes",
   "short_name": "Clientes",
-  "start_url": "/",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#00a86b",

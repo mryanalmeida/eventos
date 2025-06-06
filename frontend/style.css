@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 .container {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   padding: 2rem;
 }
@@ -32,11 +32,4 @@ button {
 }
 button:hover {
   background-color: #008f5a;
-}
-.produto {
-  display: flex;
-  gap: 0.5rem;
-}
-.produto input {
-  flex: 1;
 }
